@@ -23,6 +23,12 @@ collections:
       - { label: "story_id", name: "story_id", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - widget: "image"
+        choose_url: true
+        media_folder: "/static/img"
+        media_library:
+      config:
+        multiple: true
       - widget: select
         label: "Age"
         name: "age"
