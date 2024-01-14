@@ -23,7 +23,6 @@ collections:
       - { label: "story_id", name: "story_id", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
         label: "Age"
         name: "age"
@@ -35,6 +34,48 @@ collections:
             "Young Children (Ages 6-8)",
             "Pre-Teens (Ages 9-12)",
           ]
+      - widget: select
+        label: "Theme"
+        name: "theme"
+        multiple: true
+        create: true
+        options:
+          [
+            "Kindness and Empathy",
+            "Courage and Bravery",
+            "Friendship and Cooperation",
+            "Respect for Nature",
+            "Family and Community",
+            "Perseverance and Determination",
+            "Honesty and Integrity",
+            "Curiosity and Learning",
+          ]
+      - widget: select
+        label: "Type"
+        name: "type"
+        multiple: true
+        create: true
+        options:
+          [
+            "Adventure Stories: Exciting narratives with challenges and discoveries.",
+            "Everyday Life: Stories about daily life experiences and relatable situations.",
+            "Mythology and Legends: Stories based on cultural myths and legends, adapted for children.",
+            "Science and Exploration: Stories that include elements of science, exploration, and discovery",
+          ]
+      - widget: select
+        label: "Character"
+        name: "character"
+        multiple: true
+        create: true
+        options:
+          [
+            "Animal Characters",
+            "Human Characters",
+            "Fantasy Creatures",
+            "Robot Characters",
+            "Alien Characters",
+          ]
+      - { label: "Body", name: "body", widget: "markdown" }
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
@@ -46,13 +87,13 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
         label: "tags"
         name: "tags"
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
+      - { label: "Body", name: "body", widget: "markdown" }
   - label: "Settings"
     name: "settings"
     editor:
