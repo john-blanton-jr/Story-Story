@@ -24,6 +24,8 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - widget: "image"
+        label: "Cover Image"
+        name: "cover_image"
         choose_url: true
         media_folder: "/static/img"
         media_library:
