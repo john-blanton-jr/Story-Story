@@ -70,6 +70,7 @@ collections:
             "Mythology and Legends: Stories based on cultural myths and legends, adapted for children.",
             "Science and Exploration: Stories that include elements of science, exploration, and discovery",
           ]
+      - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
         label: "Character"
         name: "character"
@@ -83,7 +84,19 @@ collections:
             "Robot Characters",
             "Alien Characters",
           ]
-      - { label: "Body", name: "body", widget: "markdown" }
+      - widget: select
+        label: "Character"
+        name: "character"
+        multiple: true
+        create: true
+        options:
+          [
+            "Animal Characters",
+            "Human Characters",
+            "Fantasy Creatures",
+            "Robot Characters",
+            "Alien Characters",
+          ]
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
