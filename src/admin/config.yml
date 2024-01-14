@@ -27,8 +27,8 @@ collections:
         choose_url: true
         media_folder: "/static/img"
         media_library:
-      config:
-        multiple: true
+          config:
+            multiple: true
       - widget: select
         label: "Age"
         name: "age"
